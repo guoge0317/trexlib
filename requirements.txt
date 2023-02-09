@@ -1,0 +1,5 @@
+PyYAML==6.0
+pyzmq==25.0.0
+scapy==2.4.5
+simpy==4.0.1
+texttable==1.6.7
