@@ -1,6 +1,8 @@
 import setuptools
 
-VERSION = "0.0.1"
+VERSION = "0.0.2"
+
+packets_path = setuptools.find_packages(r".\\")
 
 setuptools.setup(
     name="trexlib",
@@ -10,14 +12,13 @@ setuptools.setup(
     author_email="trex.tgen@gmail.com",
     url="https://trex-tgn.cisco.com/trex/doc",
     license="TRex 2.87",
-    packages=setuptools.find_packages(".\\"),
+    packages=packets_path,
     keywords=["trex", "api", "traffic-generator", "test-automation"],
     install_requires=[
           "pyzmq>=25.0.0",
           "simpy>=4.0.1",
           "texttable>=1.6.7",
           "PyYAML>=6.0",
-          "scapy>=2.4.5",
     ],
     python_requires=">=3.9",
 )
